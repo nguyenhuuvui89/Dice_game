@@ -5,6 +5,8 @@ function myFunction() {
     var img1 = document.querySelector('.img1');
     var img2 = document.querySelector('.img2');
     var result_g = document.querySelector('.result');
+    var result_h = document.querySelector('h1');
+
     
     switch (randomNumber1) {
         case 1: 
@@ -48,9 +50,14 @@ function myFunction() {
     }
     if (randomNumber1 > randomNumber2) {
         result_g.textContent = "Player 1 is Winner";
+        result_h.textContent = "Player 1 Wins";
+
     } else if (randomNumber1 < randomNumber2) {
-        result_g.textContent = "Player 2 is Winner"
+        result_g.textContent = "Player 2 is Winner";
+        result_h.textContent = "Player 2 Wins";
+
     } else {
         result_g.textContent = "Tie"
+        result_h.textContent = "Tie"
     }
 }
